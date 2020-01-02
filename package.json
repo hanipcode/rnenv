@@ -1,0 +1,23 @@
+{
+  "name": "rnenv",
+  "version": "1.0.0",
+  "bin": {
+    "rnenv": "./bin/rnenv.js",
+    "rnenv-init": "./bin/rnenv-init.js"
+  },
+  "description": "React Native JS only environment variable",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo hai",
+    "rnenv-init": "rnenv-init",
+    "start:prod": "rnenv ENV=production npm run start",
+    "start:dev": "rnenv ENV=development npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Hanif",
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^7.0.1",
+    "envfile": "^4.5.0"
+  }
+}
