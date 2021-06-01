@@ -11,7 +11,7 @@ function crossEnv(args, callback, options = {}) {
   const env = getEnvVars(envSetters);
   if (command) {
     if (callback) {
-      callback(args);
+      callback(envSetters);
     }
     const proc = spawn(
       // run `path.normalize` for command(on windows)
